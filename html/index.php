@@ -5,7 +5,8 @@ $funkcje=array(
 	'organizator' => 'navy',
 	'microsoft' => 'blue',
 	'media' => 'orange',
-	'prelegent' => 'red'
+	'partner' => 'orange',
+	'prelegent' => '#e22'
 );
 // CONFIG END
 
@@ -43,8 +44,8 @@ html,body{
 .czlowiek:nth-of-type(2n){
 	border-left: none;
 }
-.czlowiek:nth-of-type(2n+3),.czlowiek:nth-of-type(2n+4){
-	/*border-top: none;*//*bo na druku to chcemy duplikaty krawędzi!*/
+.czlowiek:nth-of-type(4n+3),.czlowiek:nth-of-type(4n+4){
+	border-top: none;
 }
 img.top{
 	width: 100%;
@@ -52,7 +53,7 @@ img.top{
 }
 img.bottom{
 	width: 100%;
-	height: 10%;
+	height: 20%;
 	bottom: 0px;
 	position: absolute;
 }
@@ -67,18 +68,20 @@ img.bottom{
 }
 .funkcja{
 	position: absolute;
-	top: 45%;
+	top: 40%;
 	width: 100%;
 	color: white;
 	font-weight: 700;
-	font-size: 42px;
+	font-size: 46px;
 }
 .imie{
 	margin-top: 10px;
-	font-size: 42px;
+	font-size: 52px;
+	font-weight: 700;
 }
 .nazwisko{
-	font-size: 34px;
+	font-size: 42px;
+	font-weight: 700;
 }
 .funkcja, .imie, .nazwisko{
 	text-align: center;
