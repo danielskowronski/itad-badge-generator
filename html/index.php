@@ -102,12 +102,12 @@ img.bottom{
 	font-size: 10px;
 }
 .lokalizacja{
-	left: 1em;
+	left: 0.5em;
 	text-align: left;
-	bottom: -7.5em;
+	bottom: -8em;
 }
 .data{
-	right: 1em;
+	right: 0.5em;
 	margin-left: auto;
 	text-align: right;
 	bottom: -5.5em;

@@ -37,7 +37,6 @@ html,body{
 .napis, .napis table, .napis td{
 	height: 100%;
 }
-<?php  foreach($funkcje as $k=>$v){ echo ".tlo.$k{background-color: $v;}"; } ?>
 </style>
 </head>
 <body>
