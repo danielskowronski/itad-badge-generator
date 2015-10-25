@@ -12,12 +12,16 @@ $funkcje=array(
 
 function wyswietlCzlowieka($czlowiek){
 	echo "<div class='czlowiek'>";
-	echo "<div class='iks'>⊗</div>";
-	echo "<div class='tlo $czlowiek[2]'><img src='top.png' class='top' /></div>";
-	echo "<div class='funkcja'>$czlowiek[2]</div>";
-	echo "<div class='imie'>$czlowiek[0]</div>";
-	echo "<div class='nazwisko'>$czlowiek[1]</div>";
-	echo "<img src='bottom.png' class='bottom' />";
+		echo "<div class='iks'>⊗</div>";
+		echo "<div class='tlo $czlowiek[2]'><img src='top.png' class='top' /></div>";
+		echo "<div class='funkcja'>$czlowiek[2]</div>";
+		echo "<div class='imie'>$czlowiek[0]</div>";
+		echo "<div class='nazwisko'>$czlowiek[1]</div>";
+		echo "<div class='stopka'>";
+			echo "<div class='lokalizacja'>Wydział Matematyki i&nbsp;Informatyki</div>";
+			echo "<div class='data'>Uniwersytet Jagielloński<br />27.10.2015 r.</div>";
+		echo "</div>";		
+		echo "<img src='bottom.png' class='bottom' />";
 	echo "</div>";
 }
 
@@ -88,6 +92,26 @@ img.bottom{
 	text-transform: uppercase;
 	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
 }
+.stopka{
+	width: 100%;
+}
+.lokalizacja, .data{
+	z-index: 999;
+	position: relative;
+	width: 35%;
+	font-size: 10px;
+}
+.lokalizacja{
+	left: 1em;
+	text-align: left;
+	bottom: -7.5em;
+}
+.data{
+	right: 1em;
+	margin-left: auto;
+	text-align: right;
+	bottom: -5.5em;
+}
 <?php  foreach($funkcje as $k=>$v){ echo ".tlo.$k{background-color: $v;}"; } ?>
 </style>
 </head>
@@ -95,4 +119,5 @@ img.bottom{
 <?php
 foreach($ludzie as $czlowiek){
 	wyswietlCzlowieka($czlowiek);
-}
+}?>
+<hr /><a href="cytaty.php">drukuj cytaty</a>
